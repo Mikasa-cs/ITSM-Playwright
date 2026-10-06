@@ -1,0 +1,35 @@
+{
+  "wifiTroubleshooting": {
+    "prompts": [
+      "Hey",
+      "wi-fi problem the speed is some time slow sometimes fast",
+      "yes",
+      "5GHz",
+      "no",
+      "yes",
+      "no",
+      "no"
+    ],
+    "actions": [
+      {
+        "type": "clickButton",
+        "label": "no.*try another step|another step"
+      },
+      {
+        "type": "clickButton",
+        "label": "yes.*resolved|resolved"
+      }
+    ]
+  },
+  "generalInquiry": {
+    "prompts": [
+      "Hello, how do I request software access?"
+    ],
+    "expectedKeywords": [
+      "software",
+      "request",
+      "access",
+      "ticket"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "systemAlert": {
+    "title": "on duty",
+    "message": "on duty employee are getting rewards",
+    "targetEmployees": true,
+    "targetITStaff": true
+  },
+  "knownEmployees": {
+    "shivi": "Shivi (shivi.singh@vlinkinfo.com)",
+    "employee77": "Employee (employee77@enterprise.com)"
+  },
+  "tickets": {
+    "wifiIssue": {
+      "employee": "Shivi",
+      "title": "Wi-Fi",
+      "description": "Wi-FI Speed is Fluctuating constantly.",
+      "priority": "Medium"
+    },
+    "printerIssue": {
+      "employee": "employee77",
+      "title": "Printer",
+      "description": "Printer is beeping",
+      "priority": "High"
+    },
+    "vpnIssue": {
+      "employee": "Shivi",
+      "title": "VPN Disconnects",
+      "description": "GlobalProtect VPN frequently drops connection while working remotely.",
+      "priority": "Critical"
+    }
+  },
+  "resolutions": {
+    "defaultReason": "done",
+    "resolutionNote": "Issue resolved and verified with user."
+  },
+  "ticketComments": {
+    "itStaffGreeting": "Hey, How can I help you today?",
+    "employeeReply": "Thanks, the issue is still persisting after restart."
+  }
+}
