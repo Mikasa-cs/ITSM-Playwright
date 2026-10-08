@@ -64,7 +64,7 @@ async function updateWorkbook(filePath, results, isMaster = false) {
     };
 
     if (cols.npm) {
-      row.getCell(cols.npm).value = 'npm run test:login:matrix';
+      row.getCell(cols.npm).value = 'npm run test:admin:itsm';
     }
     updatedCount++;
   }
@@ -74,7 +74,7 @@ async function updateWorkbook(filePath, results, isMaster = false) {
     const summaryInfo = X.readSummaryInfo(wb, filePath);
     summaryInfo.endedText = new Date().toLocaleString();
     summaryInfo.status = 'COMPLETED';
-    summaryInfo.npmCommand = 'npm run test:login:matrix';
+    summaryInfo.npmCommand = 'npm run test:admin:itsm';
     X.writeSummary(wb, summaryInfo);
   }
 
@@ -89,7 +89,7 @@ async function main() {
 
   if (!fs.existsSync(RESULTS_FILE)) {
     console.warn(`[WARN] Results file not found at ${RESULTS_FILE}`);
-    console.warn('       Run "npm run test:login:matrix" first.');
+    console.warn('       Run "npm run test:admin:itsm" first.');
     return;
   }
 

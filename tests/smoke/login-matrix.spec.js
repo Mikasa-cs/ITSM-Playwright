@@ -85,7 +85,7 @@ async function navigateAndFillLogin(page, email, password) {
 // ---------------------------------------------------------------------------
 async function runAccessGranted(testInfo, role, excelId) {
   testInfo.annotations.push({ type: 'excel-test-id',     description: excelId });
-  testInfo.annotations.push({ type: 'excel-npm-command', description: 'npm run test:login:matrix' });
+  testInfo.annotations.push({ type: 'excel-npm-command', description: 'npm run test:admin:itsm' });
 
   const browser = await chromium.launch(browserOpts());
   const context = await browser.newContext({ storageState: { cookies: [], origins: [] } });
@@ -126,7 +126,7 @@ async function runAccessGranted(testInfo, role, excelId) {
 // ---------------------------------------------------------------------------
 async function runAccessDenied(testInfo, role, email, password, excelId, credDesc) {
   testInfo.annotations.push({ type: 'excel-test-id',     description: excelId });
-  testInfo.annotations.push({ type: 'excel-npm-command', description: 'npm run test:login:matrix' });
+  testInfo.annotations.push({ type: 'excel-npm-command', description: 'npm run test:admin:itsm' });
 
   const browser = await chromium.launch(browserOpts());
   const context = await browser.newContext({ storageState: { cookies: [], origins: [] } });
