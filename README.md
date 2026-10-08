@@ -72,17 +72,7 @@ itsm-playwright-tests/
 
 ---
 
-## 🔑 User Role Credentials
 
-Configured in `.env`:
-
-| Role | Email | Password |
-|---|---|---|
-| **Admin** | `admin@enterprise.com` | `Password@123` |
-| **IT Staff** | `agent@enterprise.com` | `Password@123` |
-| **Employee** | `employee@enterprise.com` | `Password@123` |
-
----
 
 ## 🚀 Getting Started
 
